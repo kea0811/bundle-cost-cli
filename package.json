@@ -1,0 +1,73 @@
+{
+  "name": "bundle-cost-cli",
+  "version": "0.1.0",
+  "description": "A tiny CLI that prints the gzipped bundle cost of your files — and the delta on every save.",
+  "keywords": [
+    "bundle-size",
+    "bundle-cost",
+    "gzip",
+    "brotli",
+    "cli",
+    "size-limit",
+    "performance",
+    "budget",
+    "watch",
+    "dx"
+  ],
+  "author": "kea0811",
+  "license": "MIT",
+  "homepage": "https://github.com/kea0811/bundle-cost-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kea0811/bundle-cost-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kea0811/bundle-cost-cli/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "bundle-cost": "./dist/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@vitest/coverage-v8": "^2.1.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.28.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
