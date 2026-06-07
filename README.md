@@ -4,6 +4,8 @@
 ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+**🌐 [Live demo →](https://bundle-cost-cli.vercel.app)**
+
 > Print the real over-the-wire cost of your build output — and the delta on every save.
 
 You already know your bundle is "kinda big." What you don't know, in the moment you add a dependency, is _how much_ bigger it just got. `bundle-cost` answers that in one line: point it at your built files and it prints raw, gzip, and (optionally) brotli sizes. Run it with `--watch` and it reprints a **delta** every time you save — so a stray `import { everything } from 'lodash'` shows up as `+71 KB` before you commit it, not after a user complains.
@@ -119,6 +121,10 @@ console.log(renderReport(report, { gzip: true, brotli: false, json: false, color
 There's no minifier in here and no bundler hook. `bundle-cost` reads each file as-is and runs it through Node's built-in `zlib` — `gzipSync` and `brotliCompressSync` — because gzip and brotli are what a CDN actually serves. That keeps the tool dependency-light and honest: it measures the bytes you ship, not an estimate.
 
 Watch mode keeps the previous measurement in memory and diffs against it, so the delta is always "since the last save in this session." All of the I/O — stdout, the filesystem watcher, the clock — is injected, which is why the test suite hits 100% coverage without touching your real terminal.
+
+## Live demo
+
+See it in action at **[bundle-cost-cli.vercel.app](https://bundle-cost-cli.vercel.app)** — a static landing page with a sample run.
 
 ## Contributing
 
