@@ -3,6 +3,9 @@
 ![tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)
 ![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
+![npm version](https://img.shields.io/npm/v/bundle-cost-cli.svg)
+![npm downloads](https://img.shields.io/npm/dm/bundle-cost-cli.svg)
+![bundle size](https://img.shields.io/bundlephobia/minzip/bundle-cost-cli?label=gzip)
 
 **🌐 [Live demo →](https://bundle-cost-cli.vercel.app)**
 
