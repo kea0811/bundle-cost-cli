@@ -17,19 +17,11 @@ No bundler plugin, no config file, no telemetry. Just bytes.
 
 ## Install
 
-**From GitHub** (always works):
-
-```bash
-pnpm add -g github:kea0811/bundle-cost-cli
-```
-
-**From npm** _(when published to npm)_:
-
 ```bash
 pnpm add -g bundle-cost-cli
 ```
 
-> Using npm or yarn? `npm install -g bundle-cost-cli` / `yarn global add bundle-cost-cli` work too. Or skip the install entirely and run it once with `pnpm dlx bundle-cost-cli dist/index.js` (`npx` works the same way).
+> Using npm or yarn? `npm install -g bundle-cost-cli` / `yarn global add bundle-cost-cli` work too. Or skip the install entirely with `pnpm dlx bundle-cost-cli dist/index.js` (`npx` works the same way). Bleeding edge: `pnpm add -g github:kea0811/bundle-cost-cli`.
 
 Requires Node 18+.
 
