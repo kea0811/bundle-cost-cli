@@ -15,6 +15,10 @@ You already know your bundle is "kinda big." What you don't know, in the moment 
 
 No bundler plugin, no config file, no telemetry. Just bytes.
 
+## For AI coding agents
+
+Drop [`SKILL.md`](./SKILL.md) into your AI editor / Claude Code workspace and it learns how to use this library. Tells the agent when to reach for it, the install + canonical pattern, the public API, and the gotchas that are easy to miss.
+
 ## Install
 
 ```bash
